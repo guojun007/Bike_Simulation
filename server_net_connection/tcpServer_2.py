@@ -122,7 +122,7 @@ def fun_validate(tcpCliSock, recv_message_list):
 
     select_bike_state()
 
-    message=state_2+'\r\n'
+    message=str(state_2)+'\r\n'
     
     tcpCliSock.sendall(message.encode('utf-8'))
     tcpCliSock.close()
