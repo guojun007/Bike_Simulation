@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.devil.bike_simulation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:text="自行车模拟端"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_light" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="输入车编号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:ems="5"
+            android:id="@+id/number"
+            android:hint="（请输入车编号）"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generate"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:text="生成二维码"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="车编号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textNum"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="车状态："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:text="已开锁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textState"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
